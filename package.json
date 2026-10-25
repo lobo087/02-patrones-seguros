@@ -1,0 +1,27 @@
+{
+  "name": "laboratorio-04-patrones-seguros-upgradeable",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Laboratorio de modularidad, roles, validaciones, pausas, límites y actualización UUPS segura.",
+  "type": "module",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test nodejs",
+    "lab": "hardhat run scripts/laboratorio.ts",
+    "check": "npm run compile && npm test && npm run lab"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.6.1",
+    "@openzeppelin/contracts-upgradeable": "5.6.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "5.0.7",
+    "@types/node": "^22.7.5",
+    "hardhat": "3.18.1",
+    "viem": "^2.57.2"
+  },
+  "license": "MIT"
+}

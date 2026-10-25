@@ -1,0 +1,69 @@
+{
+  "red": "Hardhat EVM local en memoria",
+  "proxy": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+  "implementacionV1": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+  "implementacionV2": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+  "roles": {
+    "administrador": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+    "operador": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "pausador": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+    "externo": "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+  },
+  "versionFinal": "2",
+  "totalFinal": "2400",
+  "limiteGlobal": "2500",
+  "transacciones": [
+    {
+      "operacion": "registrar OP-001",
+      "hash": "0x7da218b954dd24ebe3b8d71b92a122df36e6e62e73cda14afe64b177618c2bfb",
+      "gasUsado": "105310"
+    },
+    {
+      "operacion": "pausar",
+      "hash": "0x5d7aee1b12923938113ac6dcdf49855a5d34f2157fdf8cf26bc6461ddebf74b3",
+      "gasUsado": "52096"
+    },
+    {
+      "operacion": "reanudar",
+      "hash": "0xb1e806a4d5ffdb023ff370af7e4dd2c72b869d6e1940784bcc2080f918a4e691",
+      "gasUsado": "30197"
+    },
+    {
+      "operacion": "registrar OP-002",
+      "hash": "0x7a95a0aeb07914df8293924fec32a9d6cf60bbae4f2bcc36dc7758e0dc0fe26d",
+      "gasUsado": "71110"
+    },
+    {
+      "operacion": "actualizar a V2",
+      "hash": "0xa0f5cfb7f97e8931ffd08ce1c4934a91863dcd6a4dacbaf17fde702ec892e2da",
+      "gasUsado": "73365"
+    },
+    {
+      "operacion": "registrar OP-003",
+      "hash": "0x6d461e10eddbafec2f2d1a0e873b953858a48f56fbd9b31f7629fa24a7ec052e",
+      "gasUsado": "90682"
+    }
+  ],
+  "controles": [
+    {
+      "descripcion": "cuenta externa sin rol",
+      "resultado": "RECHAZO_ESPERADO"
+    },
+    {
+      "descripcion": "monto superior al límite por operación",
+      "resultado": "RECHAZO_ESPERADO"
+    },
+    {
+      "descripcion": "contrato pausado",
+      "resultado": "RECHAZO_ESPERADO"
+    },
+    {
+      "descripcion": "límite diario proyectado de 1.900",
+      "resultado": "RECHAZO_ESPERADO"
+    },
+    {
+      "descripcion": "nuevo límite global de V2",
+      "resultado": "RECHAZO_ESPERADO"
+    }
+  ]
+}
